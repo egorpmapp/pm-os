@@ -1,0 +1,20 @@
+# Секреты — никогда не коммитить
+.env
+.env.*
+*.pem
+*.key
+*service-account*.json
+*credentials*.json
+
+# Сырые выгрузки данных
+data/
+exports/
+*.csv
+*.tsv
+*.xlsx
+*.parquet
+
+# Локальные настройки Claude
+.claude/settings.local.json
+
+.DS_Store

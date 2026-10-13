@@ -1,0 +1,29 @@
+# Реестр проектов и приложений PM-OS.
+# Claude читает этот файл первым в каждой сессии.
+# Незаполненные значения помечены TODO.
+
+projects:
+  darksy:
+    name: Darksy
+    slack_channel: TODO            # например "#darksy-product"
+    drive_folder_id: TODO          # ID папки PM/Darksy
+    drive_folder_path: PM/Darksy
+    drive_common_folder_id: TODO   # ID папки PM/Darksy/_Общее
+    drive_common_folder_path: PM/Darksy/_Общее
+    drive_app_template_folder_id: TODO   # ID папки PM/Darksy/_Шаблон приложения (эталон для add-app)
+    drive_app_template_folder_path: PM/Darksy/_Шаблон приложения
+    apps: []
+
+# Пример записи приложения (добавляется скиллом add-app в projects.<проект>.apps):
+#
+#    apps:
+#      - name: Darksy Weather
+#        slug: darksy-weather
+#        platform: ios                      # ios | android | both
+#        bundle_id: com.example.darksy.weather
+#        amplitude_project_id: "123456"
+#        apphud_app_id: "app_xxxxxxxx"
+#        firebase_project: darksy-weather-prod
+#        drive_folder_id: 1AbCdEfGhIjKlMnOpQrStUvWxYz
+#        drive_folder_path: PM/Darksy/Darksy Weather
+#        status: active                     # idea | development | active | paused | archived

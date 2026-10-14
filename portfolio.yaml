@@ -27,11 +27,9 @@ projects:
 #    apps:
 #      - name: Darksy Weather
 #        slug: darksy-weather
-#        platform: ios                      # ios | android | both
 #        bundle_id: com.example.darksy.weather
 #        amplitude_project_id: "123456"
 #        apphud_app_id: "app_xxxxxxxx"
 #        firebase_project: darksy-weather-prod
 #        drive_folder_id: 1AbCdEfGhIjKlMnOpQrStUvWxYz
 #        drive_folder_path: PM/Darksy/Darksy Weather
-#        status: active                     # idea | development | active | paused | archived

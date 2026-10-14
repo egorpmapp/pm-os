@@ -16,12 +16,10 @@ description: Добавляет новое мобильное приложени
 |---|---|---|
 | Название (name) | да | Darksy Weather |
 | Проект | да | darksy (ключ из `portfolio.yaml`) |
-| Платформа | да | ios / android / both |
 | bundle_id | нет | com.example.darksy.weather |
 | amplitude_project_id | нет | 123456 |
 | apphud_app_id | нет | app_xxx |
 | firebase_project | нет | darksy-weather-prod |
-| status | нет (по умолчанию `development`) | idea / development / active / paused / archived |
 
 ## Шаги
 1. Прочитай `portfolio.yaml`. Проверь, что проект существует. Если нет, остановись и скажи об этом.
@@ -31,7 +29,7 @@ description: Добавляет новое мобильное приложени
    ```bash
    cp -r projects/<проект>/_app-template projects/<проект>/<slug>
    ```
-   В трёх скопированных файлах замени плейсхолдеры `{{APP_NAME}}`, `{{PROJECT}}`, `{{SLUG}}`, `{{PLATFORM}}`.
+   В трёх скопированных файлах замени плейсхолдеры `{{APP_NAME}}`, `{{PROJECT}}` и `{{SLUG}}`.
 5. Создай папку в Google Drive (коннектор Google Drive):
    - Родитель: папка проекта (`drive_folder_id` проекта в `portfolio.yaml`).
    - Имя папки: название приложения.
@@ -40,7 +38,7 @@ description: Добавляет новое мобильное приложени
    - Если в эталоне `_Шаблон приложения` (`drive_app_template_folder_id`) структура изменилась, повторяй **актуальную** структуру эталона.
    - Если `drive_folder_id` проекта = `TODO` или коннектор Drive недоступен / не умеет создавать папки: **не обходи это другими способами**. Запиши `drive_folder_id: TODO` и выдай мне список папок для ручного создания.
 6. Добавь запись в `projects.<проект>.apps` в `portfolio.yaml` (поля и порядок как в примере в комментарии файла):
-   name, slug, platform, bundle_id, amplitude_project_id, apphud_app_id, firebase_project, drive_folder_id, drive_folder_path (`<drive_folder_path проекта>/<название>`), status.
+   name, slug, bundle_id, amplitude_project_id, apphud_app_id, firebase_project, drive_folder_id, drive_folder_path (`<drive_folder_path проекта>/<название>`).
    Если `apps: []`, замени на список. Сохрани комментарии файла.
 7. Покажи `git diff --stat` и коммит:
    ```bash

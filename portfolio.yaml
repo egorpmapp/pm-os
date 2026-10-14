@@ -6,19 +6,19 @@ projects:
   darksy:
     name: Darksy
     slack_channel: TODO            # например "#darksy-product"
-    drive_folder_id: TODO          # ID папки PM/Darksy
+    drive_folder_id: 1s9wE1vYoM5o8KiPpuRIC1y2WAaUVCzo5   # ID папки PM/Darksy
     drive_folder_path: PM/Darksy
-    drive_common_folder_id: TODO   # ID папки PM/Darksy/_Общее
+    drive_common_folder_id: 1JUKD1QPY78D8UQOhZl-HlDr-3XCxGVjc   # ID папки PM/Darksy/_Общее (здесь же выгрузка Notion 14.10.2026)
     drive_common_folder_path: PM/Darksy/_Общее
     drive_app_template_folder_id: TODO   # ID папки PM/Darksy/_Шаблон приложения (эталон для add-app)
     drive_app_template_folder_path: PM/Darksy/_Шаблон приложения
     apps:
       - name: Darksy Cleaner
         slug: darksy-cleaner
-        bundle_id: TODO
+        bundle_id: ru.ksushaklement.cleaner   # из Notion
         amplitude_project_id: TODO
         apphud_app_id: TODO
-        firebase_project: TODO
+        firebase_project: clean-phone-e4485   # из Notion
         drive_folder_id: TODO
         drive_folder_path: PM/Darksy/Darksy Cleaner
 

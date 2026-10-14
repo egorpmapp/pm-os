@@ -12,7 +12,15 @@ projects:
     drive_common_folder_path: PM/Darksy/_Общее
     drive_app_template_folder_id: TODO   # ID папки PM/Darksy/_Шаблон приложения (эталон для add-app)
     drive_app_template_folder_path: PM/Darksy/_Шаблон приложения
-    apps: []
+    apps:
+      - name: Darksy Cleaner
+        slug: darksy-cleaner
+        bundle_id: TODO
+        amplitude_project_id: TODO
+        apphud_app_id: TODO
+        firebase_project: TODO
+        drive_folder_id: TODO
+        drive_folder_path: PM/Darksy/Darksy Cleaner
 
 # Пример записи приложения (добавляется скиллом add-app в projects.<проект>.apps):
 #
